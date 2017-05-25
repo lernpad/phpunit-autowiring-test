@@ -1,0 +1,11 @@
+parameters:
+    mailer.transport: sendmail
+
+services:
+    mailer:
+        class: AppBundle\Service\Mailer
+        arguments: ['%mailer.transport%']
+
+    newsletter_manager:
+        class: AppBundle\Service\NewsletterManager
+        arguments: ['@mailer']
