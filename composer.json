@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" }
+    },
+    "require": {
+        "symfony/dependency-injection": "3.3.x-dev",
+        "symfony/yaml": "3.3.x-dev",
+        "phpunit/phpunit": "^4.8"
+    }
+}
